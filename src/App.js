@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bulma/css/bulma.css';
+import ProfileCard from "./ProfileCard";
+import AlexaImg from "./img/alexa.png";
+import CortanaImg from "./img/cortana.png";
+import SiriImg from "./img/siri.png";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <div>Personal Digital Assistans</div>
+
+            <ProfileCard title="Alexa" handle="@alexa99" image={AlexaImg}/>
+            <ProfileCard title="Cortana" handle="@cortana32" image={CortanaImg}/>
+            <ProfileCard title="Siri" handle="@siri01" image={SiriImg}/>
+        </div>
+    );
 }
 
 export default App;
